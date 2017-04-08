@@ -2,21 +2,15 @@
 <html>
 <head>
   <link href="styles.css" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
-  
-  <style>
-    body {
-      background-color: black;
-      font-size: 2em;
-      color: white;
-      text-align: center;
-    }
-    .mayday2017 {
-      font-size: 2.5em;
-    }
-  </style>
+
+  <!--
 
   <h4>MAY DAY! MAY DAY!</h1>
 
@@ -30,7 +24,149 @@
 
   <h4>MORE INFO COMING SOON<h1>
 
+  -->
 
+  <div class="container">
+
+    <div class="racismContainer"><div class="racism"><p>RACISM</p></div></div>
+    <div class="racismContainer"><div class="racism"><p>SEXISM</p></div></div>
+    <div class="racismContainer"><div class="racism"><p>ANTI-GAY</p></div></div>
+    <div class="racismContainer"><div class="racism"><p>ANTI-MUSLIM</p></div></div>
+    <div class="racismContainer"><div class="racism"><p>MILITA-RISM</p></div></div>
+    <div class="racismContainer"><div class="racism"><p>XENO-PHOBIA</p></div></div>
+
+
+    <div class="flyerContainer">
+
+      <img src="../../crown.png" class="crown" />
+
+      <div class="linksContainer">
+        <h2>LINKS</h2>
+        <div class="linksList">
+          <ul>
+            <li><a href="https://www.facebook.com/events/1319708881455178/" class="link">CUNY May Day Facebook Page</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flyer"></div>
+
+      <div class="signupContainer">
+        <h2>SIGN UP FOR EMAIL ALERTS</h2>
+
+        <form id="signupForm"
+        method="POST"
+        action="https://script.google.com/macros/s/AKfycbyV6X1XDjObVs48dbAMWtqRwZAqVxzglUUvjY4yoxTSahmXdZlr/exec">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div>
+            <label for="name">Email:</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div>
+            <button type="submit">SUBMIT</button>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+
+    <div class="events">
+      <h1>EVENTS</h1>
+      <br><br><br><br><br><br>
+      <p>Event listings coming soon...</p>
+    </div>
+
+    <div class="newsContainer">
+      <div class="news">
+        <h1>NEWS</h1>
+
+        <div class="newsItemsScrollContainer">
+          <div class="newsItemsContainer">
+            <ul>
+
+              <li>
+                <a href="https://www.democracynow.org/2017/3/30/headlines/puerto_rican_public_university_students_strike_against_budget_cuts">
+                  Puerto Rican Public University Students Strike Against Budget Cuts
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.jacobinmag.com/2017/02/may-day-general-strike-trump-international-womens-day/">
+                  Why We Should Strike on May Day
+                </a>
+              </li>
+
+              <li>
+                <a href="http://www.labornotes.org/2017/03/momentum-builds-may-day-strikes">
+                  Momentum Builds for May Day Strikes
+                </a>
+              </li>
+
+              <li>
+                <a href="http://www.newsmax.com/US/donald-trump-service-workers-may-day-strike-may-day/2017/03/18/id/779491/">
+                  Service Workers Plan May Day Strike Against Trump
+                </a>
+              </li>
+
+              <li>
+                <a href="http://www.commondreams.org/news/2017/04/03/trump-final-straw-immigrant-and-workers-rights-groups-gear-may-day-strikes">
+                  With Trump As "Final Straw," Immigrant and Workers' Rights Groups Gear Up for May Day Strikes
+                </a>
+              </li>
+
+              <li>
+                <a href="http://www.workers.org/2017/02/14/global-may-day-strike/#.WOf2a1PyuRs">
+                  It's time for a GLOBAL MAY DAY STRIKE
+                </a>
+              </li>
+
+
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <h1>ABOUT</h1>
+      <p>
+        2017 has been marked with increasing attacks by the Trump administration: the Muslim ban,
+        the border wall, police brutality, immigrant deportations, injustice at Standing Rock,
+        the failed push to defund healthcare, the dismantling of environmental and economic regulations, and more.
+        <br><br>
+        These attacks are an exacerbation of what we've endured for the past several decades,
+        including the 3 million deportations and the racist police brutality we experienced under Obama's government.
+        <br><br>
+        Since Trump's election, however, we have seen waves of resistance against his attacks: at airports, on campuses,
+        in strikes of women and immigrant workers. We need to channel this discontent and show all our strength walking out on May Day.
+        <br><br>
+        In opposition to Trump and all he represents, help us build a large May Day turnout that will inspire
+        higher levels of struggle this year and beyond.
+      </p>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    $(function() {
+      $('#signupForm').submit( (event) => {
+        event.preventDefault();
+        $.ajax({
+          type: 'POST',
+          url: 'https://script.google.com/macros/s/AKfycbyV6X1XDjObVs48dbAMWtqRwZAqVxzglUUvjY4yoxTSahmXdZlr/exec',
+          data: { name: event.target.name.value,
+                  email: event.target.email.value }
+        })
+        return false;
+      })
+    })
+  </script>
 
 
 </body>

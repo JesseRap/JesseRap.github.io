@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Keep-Calm';
-  src:url('Keep-Calm.ttf.woff') format('woff'),
-      url('Keep-Calm.ttf.svg#Keep-Calm') format('svg'),
-      url('Keep-Calm.ttf.eot'),
-      url('Keep-Calm.ttf.eot?#iefix') format('embedded-opentype');
+  src:url('./Keep-Calm.ttf.woff') format('woff'),
+      url('./Keep-Calm.ttf.svg#Keep-Calm') format('svg'),
+      url('./Keep-Calm.ttf.eot'),
+      url('./Keep-Calm.ttf.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }

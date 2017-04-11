@@ -1,12 +1,14 @@
 @font-face {
   font-family: 'Keep-Calm';
-  src:url('./Keep-Calm.ttf.woff') format('woff'),
-      url('./Keep-Calm.ttf.svg#Keep-Calm') format('svg'),
-      url('./Keep-Calm.ttf.eot'),
-      url('./Keep-Calm.ttf.eot?#iefix') format('embedded-opentype');
+  src:url('./font/Keep-Calm.ttf.woff') format('woff'),
+      url('./font/Keep-Calm.ttf.svg#Keep-Calm') format('svg'),
+      url('./font/Keep-Calm.ttf.eot'),
+      url('./font/Keep-Calm.ttf.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
+
+
 
 * {
   box-sizing: border-box;
@@ -51,7 +53,7 @@ body {
 }
 
 .container {
-  min-width: 700px;
+  /*min-width: 700px;*/
   overflow: hidden;
 }
 .racismContainer:nth-child(0n + 2) {
@@ -70,7 +72,7 @@ body {
   position: absolute;
   /*left: -50px;*/
   top: -20px;
-  z-index: -1;
+  /*z-index: -1;*/
 }
 
 .racismContainer:nth-child(0n + 4) {
@@ -83,7 +85,7 @@ body {
   position: absolute;
   /*left: -50px;*/
   top: -20px;
-  z-index: -1;
+  /*z-index: -1;*/
 }
 
 .racismContainer:nth-child(0n + 5) {
@@ -95,7 +97,7 @@ body {
   position: absolute;
   /*left: -50px;*/
   top: -20px;
-  z-index: -1;
+  /*z-index: -1;*/
 }
 
 .racismContainer:nth-child(0n + 6) {
@@ -108,7 +110,7 @@ body {
   position: absolute;
   /*left: -50px;*/
   top: -20px;
-  z-index: -1;
+  /*z-index: -1;*/
 }
 
 .racism {
@@ -123,6 +125,7 @@ body {
   transform: rotateZ(-45deg);
   opacity: 0.2;
   box-shadow: 0 0 20px 5px black;
+  z-index: 3;
 }
 
 .racism p {
@@ -139,11 +142,12 @@ body {
   border-bottom: 7px solid black;
   position: absolute;
   left: 0px;
+  z-index: 2;
 }
 
 .flyer {
-
-  height: 100vh;
+  position: relative;
+  height: 500px;
   width: 30%;
   min-width: 325px;
   background-image: url(../../may-day-3-truncated-2.jpg);
@@ -158,6 +162,7 @@ body {
 
 .flyerContainer {
   width: 100%;
+  height: 600px;
   border-bottom: 5px solid white;
   margin-bottom: 10px;
   display: flex;
@@ -165,7 +170,9 @@ body {
 }
 
 .linksContainer {
-  margin-top: 25%;
+  /*margin-top: 25%;*/
+  margin: auto;
+  margin-top: 200px;
   width: 30%;
 }
 
@@ -174,7 +181,9 @@ body {
 }
 
 .signupContainer {
-  margin-top: 20%;
+  /*margin-top: 20%;*/
+  margin: auto;
+  margin-top: 200px;
   width: 30%;
 }
 
@@ -259,7 +268,27 @@ form {
   position: absolute;
   left: calc(50% - 35px);
   transform: rotateZ(180deg);
-  top: 10px;
+  top: -70px;
   filter: invert();
   animation: spin 5s cubic-bezier(0,.65,.22,.98) infinite alternate;
+}
+
+.aboutTextContainer {
+  width: 95%;
+  margin: auto;
+}
+
+@media (max-width: 720px) {
+  .flyerContainer {
+    flex-direction: column;
+    height: 1000px;
+  }
+  .linksContainer {
+    order: 2;
+    margin-top: 10px;
+  }
+  .signupContainer {
+    order: 3;
+    margin-top: 10px;
+  }
 }

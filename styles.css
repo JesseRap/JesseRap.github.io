@@ -235,6 +235,10 @@ form {
   margin-bottom: 10px;
 }
 
+.petition {
+  height: auto;
+}
+
 .about {
   margin: auto;
   border-bottom: 5px solid white;

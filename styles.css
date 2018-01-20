@@ -48,6 +48,9 @@ body {
   height: 100%;
 }
 
+.github-logo
+  width: 100px
+
 .mayday2017 {
   font-size: 5em;
 }

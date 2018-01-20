@@ -21,6 +21,11 @@ body a{
     font-size: x-large !important;
     margin-top: -60px !important;
 }
+
+.github-logo {
+	width: 100px
+}
+
 .contact-info2 h3 {
   text-align: center;
   font-size: 5em;

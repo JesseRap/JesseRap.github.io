@@ -46,8 +46,8 @@ body a{
 }
 
 h1,h2,h3,h4,h5,h6{
-	margin:0;			   
-}	
+	margin:0;
+}
 p{
 	margin:0;
 }
@@ -828,10 +828,10 @@ textarea {
 	  width: 66%;
 	}
 }
-@media (max-width: 768px){
+@media (max-width: 827px){
 	span.menu:before {
 		content: url(../images/nav-icon.png);
-		cursor: pointer;	
+		cursor: pointer;
 		height:32px;
 	}
 	.top-menu {
